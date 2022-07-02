@@ -8,6 +8,7 @@ local run = game:GetService("RunService")
 local Utility = {}
 local Objects = {}
 wait()
+
 function KavoRemaster:DraggingEnabled(frame, parent)
         
     parent = parent or frame
@@ -153,7 +154,19 @@ Settings = game:service'HttpService':JSONEncode(readfile(Name))
 end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
-
+function KavoRemaster:ToggleUI()
+    if game:GetService"CoreGui"[LibName].Enabled then
+        game:GetService"CoreGui"[LibName].Enabled = false
+    else
+        game:GetService"CoreGui"[LibName].Enabled = true
+    end
+end
+function KavoRemaster:RemoveCorner()
+        for i,v in next, game:GetService"CoreGui":GetDescendants() do
+                if v:IsA"UICorner" then
+                        v:Destroy()
+         end
+                end
 function KavoRemaster:CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
@@ -373,8 +386,7 @@ function KavoRemaster:CreateLib(kavName, themeList)
             coverup.BackgroundColor3 = themeList.Header
         end
     end)()
-
-    function KavoRemaster:ChangeColor(prope,color)
+       function KavoRemaster:ChangeColor(prope,color)
         if prope == "Background" then
             themeList.Background = color
         elseif prope == "SchemeColor" then
@@ -2663,12 +2675,5 @@ function KavoRemaster:CreateLib(kavName, themeList)
         return Sections
     end  
     return Tabs
-end
-function KavoRemaster:ToggleUI()
-    if game.CoreGui[LibName].Enabled then
-        game.CoreGui[LibName].Enabled = false
-    else
-        game.CoreGui[LibName].Enabled = true
-    end
 end
 return KavoRemaster
