@@ -1,5 +1,3 @@
---Original Creator: xHeptc
---Modified Version: poster
     local KavoRemaster = {}
 
     local tween = game:GetService("TweenService")
@@ -108,11 +106,11 @@
             ElementColor = Color3.fromRGB(199, 99, 20)
         },
         --[[Slime = {
-            SchemeColor = Color3.fromRGB(26, 189, 158),
-            Background = Color3.fromRGB(44, 62, 82),
-            Header = Color3.fromRGB(57, 81, 105),
-            TextColor = Color3.fromRGB(255, 255, 255),
-            ElementColor = Color3.fromRGB(52, 74, 95)
+            SchemeColor = Color3.fromRGB(),
+            Background = Color3.fromRGB(),
+            Header = Color3.fromRGB(),
+            TextColor = Color3.fromRGB(),
+            ElementColor = Color3.fromRGB()
         },]]
         Sentinel = {
             SchemeColor = Color3.fromRGB(230, 35, 69),
@@ -232,6 +230,10 @@
         
         if syn then
             syn.protect_gui(ScreenGui)
+        elseif pebc_create then
+            ScreenGui.Parent = get_hidden_gui()
+        elseif getexecutorname and gethui() then
+            ScreenGui.Parent = gethui()
         else
         ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
         end
