@@ -169,7 +169,8 @@ function KavoRemaster:RemoveCorner()
         end
     end
 function KavoRemaster.CreateLib(kavName, themeList)
-    if not themeList then
+    themeList = themeList or {}
+        if not themeList then
         themeList = themes
     end
     if themeList == "DarkTheme" then
@@ -191,7 +192,7 @@ function KavoRemaster.CreateLib(kavName, themeList)
     elseif themeList == "Serpent" then
         themeList = themeStyles.Serpent
     elseif themeList == "Jerry" then
-                themeList = themeStyles.Jerry
+        themeList = themeStyles.Jerry
     else
         if themeList.SchemeColor == nil then
             themeList.SchemeColor = themes.SchemeColor
