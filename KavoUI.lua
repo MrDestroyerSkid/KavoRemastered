@@ -7,6 +7,15 @@
 
     local Utility = {}
     local Objects = {}
+
+    function KavoRemaster:ToggleUI()
+        if game.CoreGui[LibName].Enabled then
+            game.CoreGui[LibName].Enabled = false
+        else
+            game.CoreGui[LibName].Enabled = true
+        end
+    end
+
     function KavoRemaster:DraggingEnabled(frame, parent)
             
         parent = parent or frame
@@ -2655,12 +2664,5 @@
             return Sections
         end  
         return Tabs
-    end
-    function KavoRemaster:ToggleUI()
-        if game.CoreGui[LibName].Enabled then
-            game.CoreGui[LibName].Enabled = false
-        else
-            game.CoreGui[LibName].Enabled = true
-        end
     end
     return KavoRemaster
