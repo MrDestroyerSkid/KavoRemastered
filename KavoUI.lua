@@ -100,14 +100,14 @@ local themeStyles = {
         TextColor = Color3.fromRGB(255, 255, 255),
         ElementColor = Color3.fromRGB(52, 74, 95)
     },
-    Jerry = {
+    --[[Jerry = {
         SchemeColor = Color3.fromRGB(26, 189, 158),
         Background = Color3.fromRGB(44, 62, 82),
         Header = Color3.fromRGB(199, 107, 20),
         TextColor = Color3.fromRGB(199, 90, 15),
         ElementColor = Color3.fromRGB(199, 99, 20)
     },
-    --[[Slime = {
+    Slime = {
         SchemeColor = Color3.fromRGB(),
         Background = Color3.fromRGB(),
         Header = Color3.fromRGB(),
@@ -169,7 +169,6 @@ function KavoRemaster:RemoveCorner()
         end
     end
 function KavoRemaster.CreateLib(kavName, themeList)
-    themeList = themeList or {}
         if not themeList then
         themeList = themes
     end
@@ -191,8 +190,8 @@ function KavoRemaster.CreateLib(kavName, themeList)
         themeList = themeStyles.Synapse
     elseif themeList == "Serpent" then
         themeList = themeStyles.Serpent
-    elseif themeList == "Jerry" then
-        themeList = themeStyles.Jerry
+    --elseif themeList == "Jerry" then
+    --    themeList = themeStyles.Jerry
     else
         if themeList.SchemeColor == nil then
             themeList.SchemeColor = themes.SchemeColor
