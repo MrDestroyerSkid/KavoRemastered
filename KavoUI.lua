@@ -233,7 +233,7 @@ function KavoRemaster.CreateLib(kavName, themeList)
     ScreenGui.ResetOnSpawn = false
     if syn then
         syn.protect_gui(ScreenGui)
-    elseif get_hidden_gui() then
+    elseif get_hidden_gui then
         ScreenGui.Parent = get_hidden_gui()
     elseif getexecutorname then
         ScreenGui.Parent = gethui()
