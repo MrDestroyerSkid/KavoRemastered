@@ -154,7 +154,7 @@ end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 
-function KavoRemaster.CreateLib(kavName, themeList)
+function KavoRemaster:CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
     end
