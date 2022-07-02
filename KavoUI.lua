@@ -235,7 +235,7 @@ function KavoRemaster.CreateLib(kavName, themeList)
         syn.protect_gui(ScreenGui)
     elseif get_hidden_gui() then
         ScreenGui.Parent = get_hidden_gui()
-    elseif getexecutorname and gethui() then
+    elseif getexecutorname then
         ScreenGui.Parent = gethui()
     else
     ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
