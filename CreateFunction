@@ -1,5 +1,5 @@
 --Get Library Loadstring
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MrDestroyerSkid/KavoRemastered/main/KavoUI"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MrDestroyerSkid/KavoRemastered/main/KavoUI.lua"))()
 --Create a new window
 local Window = Library.CreateLib("Kavo Epik", "DarkTheme") --Modify DarkTheme to other theme in Themes
 --Create a tab section
