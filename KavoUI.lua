@@ -155,18 +155,18 @@ end)
 
 local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
 function KavoRemaster:ToggleUI()
-    if game:GetService"CoreGui"[LibName].Enabled then
-        game:GetService"CoreGui"[LibName].Enabled = false
+    if game:GetService("CoreGui")[LibName].Enabled then
+        game:GetService("CoreGui")[LibName].Enabled = false
     else
         game:GetService"CoreGui"[LibName].Enabled = true
     end
 end
 function KavoRemaster:RemoveCorner()
         for i,v in next, game:GetService"CoreGui":GetDescendants() do
-                if v:IsA"UICorner" then
+                if v:IsA("UICorner") then
                         v:Destroy()
-         end
                 end
+        end
 function KavoRemaster:CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
