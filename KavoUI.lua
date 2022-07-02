@@ -168,7 +168,7 @@ function KavoRemaster:RemoveCorner()
                 end
         end
     end
-function KavoRemaster:CreateLib(kavName, themeList)
+function KavoRemaster.CreateLib(kavName, themeList)
     if not themeList then
         themeList = themes
     end
