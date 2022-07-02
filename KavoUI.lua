@@ -7,6 +7,7 @@ local run = game:GetService("RunService")
 
 local Utility = {}
 local Objects = {}
+wait()
 function KavoRemaster:DraggingEnabled(frame, parent)
         
     parent = parent or frame
