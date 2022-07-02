@@ -235,12 +235,15 @@ function KavoRemaster.CreateLib(kavName, themeList)
     function GetExecutor()
         if syn then
             syn.protect_gui(ScreenGui)
+                        ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
             return
         elseif get_hidden_gui() then
             ScreenGui.Parent = get_hidden_gui()
+                        ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
             return
         elseif getexecutorname() then
             ScreenGui.Parent = gethui()
+            ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
             return
         end
         ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
