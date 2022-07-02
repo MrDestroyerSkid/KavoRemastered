@@ -4,4 +4,5 @@ A newer fan made version of KavoUI Library, design to make shit less buggier and
 Is it recommend and require to use this fan made as your new library, if you using something Kavo UI on your script you only need to change library loadstring to loadstring(game:HttpGet("https://raw.githubusercontent.com/MrDestroyerSkid/KavoRemastered/main/KavoUI.lua"))()
 
 Original KavoUI Creator: xHeptc
+
 Remaster Creator: posterRetarded64#0870 (discord)
