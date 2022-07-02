@@ -231,16 +231,21 @@ function KavoRemaster.CreateLib(kavName, themeList)
     ScreenGui.Name = LibName
     ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     ScreenGui.ResetOnSpawn = false
-    if syn then
-        syn.protect_gui(ScreenGui)
-    elseif get_hidden_gui then
-        ScreenGui.Parent = get_hidden_gui()
-    elseif getexecutorname then
-        ScreenGui.Parent = gethui()
-    else
-    ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
+    function GetExecutor()
+        if syn then
+            syn.protect_gui(ScreenGui)
+            return
+        elseif get_hidden_gui() then
+            ScreenGui.Parent = get_hidden_gui()
+            return
+        elseif getexecutorname() then
+            ScreenGui.Parent = gethui()
+            return
+        end
+        ScreenGui.Parent = game:WaitForChild(game:GetService("CoreGui").Name)
+        return
     end
-
+    GetExecutor()
     Main.Name = "Main"
     Main.Parent = ScreenGui
     Main.BackgroundColor3 = themeList.Background
