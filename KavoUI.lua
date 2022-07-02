@@ -230,7 +230,7 @@
         
         if syn then
             syn.protect_gui(ScreenGui)
-        elseif pebc_create then
+        elseif get_hidden_gui() then
             ScreenGui.Parent = get_hidden_gui()
         elseif getexecutorname and gethui() then
             ScreenGui.Parent = gethui()
