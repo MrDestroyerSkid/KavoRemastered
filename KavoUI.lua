@@ -194,15 +194,15 @@ function KavoRemaster.CreateLib(kavName, themeList)
                 themeList = themeStyles.Jerry
     else
         if themeList.SchemeColor == nil then
-            themeList.SchemeColor = Color3.fromRGB(74, 99, 135)
+            themeList.SchemeColor = themes.SchemeColor
         elseif themeList.Background == nil then
-            themeList.Background = Color3.fromRGB(36, 37, 43)
+            themeList.Background = themes.Background
         elseif themeList.Header == nil then
-            themeList.Header = Color3.fromRGB(28, 29, 34)
+            themeList.Header = themes.Header
         elseif themeList.TextColor == nil then
-            themeList.TextColor = Color3.fromRGB(255,255,255)
+            themeList.TextColor = themes.TextColor
         elseif themeList.ElementColor == nil then
-            themeList.ElementColor = Color3.fromRGB(32, 32, 38)
+            themeList.ElementColor = themes.ElementColor
         end
     end
 
