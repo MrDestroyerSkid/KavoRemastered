@@ -11,3 +11,5 @@ Section:NewButton("ButtonText", "ButtonInfo", function()
     print("Clicked")
 end)
 --read https://xheptcofficial.gitbook.io/kavo-library/ for more because im too lazy to type these :skull:
+--custom
+Library:RemoveCorner() -- Always put bottom Library Loadstring
