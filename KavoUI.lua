@@ -280,7 +280,7 @@ function KavoRemaster:ToggleUI()
         title.Name = "title"
         title.Parent = MainHeader
         title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        title.BackgroundTransparency = 1.000
+        title.Transparency = 1.000
         title.BorderSizePixel = 0
         title.Position = UDim2.new(0.0171428565, 0, 0.344827592, 0)
         title.Size = UDim2.new(0, 204, 0, 8)
