@@ -172,6 +172,7 @@
                 for e,Corner in next, v:GetDescendants() do
                     if Corner:IsA"UICorner" then
                         v:Destroy()
+					print"success"
                     end
                 end
             end
