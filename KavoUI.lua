@@ -162,10 +162,11 @@
             v.Enabled = false
         else
             v.Enabled = true
+				end
             end
         end
     end
-    function Kavo.ClearAllUICorner()
+    function Kavo:RemoveUICorner()
         for i,v in next, game:GetService"CoreGui":GetDescendants() do
             if v.Name == LibName then
                 for e,Corner in next, v:GetDescendants() do
