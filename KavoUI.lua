@@ -256,6 +256,8 @@
         blurFrame.ZIndex = 999
     if gethui then
         ScreenGui.Parent = gethui()
+elseif syn and syn.protect_gui then
+	syn.protect_gui(ScreenGui)
     else
         ScreenGui.Parent = game:GetService"CoreGui"
     end
