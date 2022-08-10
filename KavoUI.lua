@@ -172,7 +172,7 @@
                 for e,Corner in next, v:GetDescendants() do
                     if Corner:IsA"UICorner" then
                         v:Destroy()
-					print"success"
+			--print"success"
                     end
                 end
             end
@@ -730,6 +730,7 @@ elseif syn and syn.protect_gui then
                     local sample = Sample
     
                     btn.MouseButton1Click:Connect(function()
+						wait()
                         if not focusing then
                             callback()
                             local c = sample:Clone()
@@ -758,6 +759,7 @@ elseif syn and syn.protect_gui then
                     end)
                     local hovering = false
                     btn.MouseEnter:Connect(function()
+						wait()
                         if not focusing then
                             game.TweenService:Create(btn, TweenInfo.new(0.1, Enum.EasingStyle.Linear, Enum.EasingDirection.In), {
                                 BackgroundColor3 = Color3.fromRGB(themeList.ElementColor.r * 255 + 8, themeList.ElementColor.g * 255 + 9, themeList.ElementColor.b * 255 + 10)
