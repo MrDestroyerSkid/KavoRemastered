@@ -153,7 +153,7 @@
     Settings = game:service'HttpService':JSONEncode(readfile(Name))
     end)
     
-    local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
+    local LibName = tostring(math.random(1, 100)..math.random(1,50)..math.random(1, 100)..math.random(1,2))
     
     function Kavo.CreateLib(kavName, themeList)
         if not themeList then
@@ -202,6 +202,7 @@
                 v:Destroy()
             end
         end
+	wait()
         local ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
         local MainCorner = Instance.new("UICorner")
