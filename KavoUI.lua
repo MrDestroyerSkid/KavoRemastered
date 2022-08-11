@@ -156,29 +156,6 @@
     
     local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
     
-    function Kavo:ToggleUI()
-        for i,v in next, game:GetDescendants() do
-        if v.Name == LibName then
-        if v.Enabled then
-            v.Enabled = false
-        else
-            v.Enabled = true
-				end
-            end
-        end
-    end
-    function Kavo:RemoveUICorner()
-        for i,v in next, game:GetService"CoreGui":GetDescendants() do
-            if v.Name == LibName then
-                for e,Corner in next, v:GetDescendants() do
-                    if Corner:IsA"UICorner" then
-                        v:Destroy()
-			--print"success"
-                    end
-                end
-            end
-        end
-    end
     function Kavo.CreateLib(kavName, themeList)
         if not themeList then
             themeList = themes
@@ -391,7 +368,24 @@ elseif syn and syn.protect_gui then
                 coverup.BackgroundColor3 = themeList.Header
             end
         end)()
-    
+       function Kavo:ToggleUI()
+		if ScreenGui ~= nil then
+        if ScreenGui.Enabled then
+            ScreenGui.Enabled = false
+        else
+            ScreenGui.Enabled = true
+		end
+	end
+end
+    function Kavo:RemoveUICorner()
+			if ScreenGui ~= nil then
+        for i,v in next, ScreenGui:GetDescendants() do
+                    if Corner:IsA"UICorner" then
+                        v:Destroy()
+			end
+                    end
+                end
+            end
         function Kavo:ChangeColor(prope,color)
             if prope == "Background" then
                 themeList.Background = color
