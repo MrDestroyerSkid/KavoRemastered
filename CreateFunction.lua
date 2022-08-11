@@ -1,3 +1,5 @@
+--NOTE: "Library:ToggleUI()" and "Library:RemoveUICorner()" are now interpreted and requires to put bottom Window variable
+
 --Get Library Loadstring
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MrDestroyerSkid/KavoRemastered/main/KavoUI.lua"))()
 --Create a new window
