@@ -1,7 +1,7 @@
 # KavoRemastered
 Status: Stable
 
-A newer fan made version of KavoUI Library, design to make shit less buggier and extra themes ig ¯\_(ツ)_/¯. It also been improving script stability, patches and few annoying thing, it does do a update or patch when new roblox update release, you can use this as a fix and better version of Kavo and wait xHeptc to update, this also improve protection, specify execution, what type of executor you are using will use a different protection, it also had new new custom feature for UI so read CreateFunction if you want to use.
+A newer fan made version of KavoUI Library, design to make shit less buggier and extra themes ig ¯\_(ツ)_/¯. It also been improving script stability, patches and fix few annoying thing, it does do a update or patch when new roblox update release, this also improve protection.It o had new new custom feature for Libraryad CreateFunction if you want to use.
 
 IM not a original creator of Kavo but if you want to use official kavo ui then you can go read this https://xheptcofficial.gitbook.io/kavo-library.
 
