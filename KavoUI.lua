@@ -306,6 +306,7 @@ elseif syn and syn.protect_gui then
             }):Play()
             wait(1)
             ScreenGui:Destroy()
+		script:Destroy()
         end)
     
         MainSide.Name = "MainSide"
