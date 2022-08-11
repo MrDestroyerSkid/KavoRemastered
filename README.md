@@ -11,6 +11,8 @@ Original KavoUI Creator: xHeptc
 
 Remaster Creator: posterRetarded64#0870 (discord)
 
+Join KavoRemastered discord: https://discord.gg/sDkaFhkCJu 
+
 # Custom Features
 
 Tired of using Old Kavo? We'll have feature to decorate or helping assist you while making script! (SOON)
