@@ -2,3 +2,5 @@ Update Logs:
 8/10/2022
 + Fixed Library somehow dosent run on specific game
 + Fixed where buttons are bit of slow somehow
+8/11/2022
+- "Library:ToggleUI()" and "Library:RemoveUICorner()" are now interpreted and requires to put above window variable
