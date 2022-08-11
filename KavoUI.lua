@@ -203,7 +203,7 @@
                 v:Destroy()
             end
         end
-        local ScreenGui = Instance.new("ScreenGui")
+        ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
         local MainCorner = Instance.new("UICorner")
         local MainHeader = Instance.new("Frame")
@@ -376,18 +376,19 @@ elseif syn and syn.protect_gui then
             ScreenGui.Enabled = false
         else
             ScreenGui.Enabled = true
+			end
 		end
 	end
 end
     function Kavo:RemoveUICorner()
-			if ScreenGui ~= nil then
+	if ScreenGui ~= nil then
         for i,v in next, ScreenGui:GetDescendants() do
                     if v:IsA"UICorner" then
                         v:Destroy()
 			end
                     end
                 end
-            end
+	end
         function Kavo:ChangeColor(prope,color)
             if prope == "Background" then
                 themeList.Background = color
