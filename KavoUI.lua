@@ -382,7 +382,7 @@ end
     function Kavo:RemoveUICorner()
 			if ScreenGui ~= nil then
         for i,v in next, ScreenGui:GetDescendants() do
-                    if Corner:IsA"UICorner" then
+                    if v:IsA"UICorner" then
                         v:Destroy()
 			end
                     end
