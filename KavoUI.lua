@@ -13,7 +13,7 @@
     local tweeninfo = TweenInfo.new
     local input = game:GetService("UserInputService")
     local run = game:GetService("RunService")
-    
+	local SUI;    
     local Utility = {}
     local Objects = {}
 	task.wait()
@@ -203,7 +203,7 @@
                 v:Destroy()
             end
         end
-        ScreenGui = Instance.new("ScreenGui")
+        local ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
         local MainCorner = Instance.new("UICorner")
         local MainHeader = Instance.new("Frame")
@@ -359,7 +359,7 @@ elseif syn and syn.protect_gui then
         infoContainer.ClipsDescendants = true
         infoContainer.Position = UDim2.new(0.299047619, 0, 0.874213815, 0)
         infoContainer.Size = UDim2.new(0, 368, 0, 33)
-    
+    	SUI = ScreenGui
         
         coroutine.wrap(function()
             while wait() do
@@ -371,7 +371,7 @@ elseif syn and syn.protect_gui then
             end
         end)()
        function Kavo:ToggleUI()
-		if ScreenGui ~= nil then
+		if SUI ~= nil then
         if ScreenGui.Enabled then
             ScreenGui.Enabled = false
         else
@@ -381,8 +381,8 @@ elseif syn and syn.protect_gui then
 	end
 end
     function Kavo:RemoveUICorner()
-	if ScreenGui ~= nil then
-        for i,v in next, ScreenGui:GetDescendants() do
+	if SUI ~= nil then
+        for i,v in next, SUI:GetDescendants() do
                     if v:IsA"UICorner" then
                         v:Destroy()
 			end
