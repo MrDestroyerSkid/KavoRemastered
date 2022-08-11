@@ -1,7 +1,7 @@
 # KavoRemastered
 Status: Working
 
-A newer fan made version of KavoUI Library. More better to use than original one for a while. Improving script stability, faster, better,more shitty themes, patches and fix few annoying thing, it does do a update or patch when new roblox update release, this also improve protection.It also had new new custom feature for Libraryad CreateFunction if you want to use.
+A newer fan made version of KavoUI Library. More better to use than original one for a while. Improving script stability, faster, better,more shitty themes, patches and fix few annoying thing, it does do a update or patch when new roblox update release, this also improve protection and new custom feature!!!!!
 
 IM not a original creator of Kavo but if you want to use official kavo ui then you can go read this https://xheptcofficial.gitbook.io/kavo-library.
 
