@@ -105,7 +105,7 @@
             SchemeColor = Color3.fromRGB(26, 189, 158),
             Background = Color3.fromRGB(44, 62, 82),
             Header = Color3.fromRGB(199, 107, 20),
-            TextColor = Color3.fromRGB(199, 90, 15),
+            TextColor = Color3.fromRGB(250, 250, 250),
             ElementColor = Color3.fromRGB(199, 99, 20)
         },
         Midnight = {
