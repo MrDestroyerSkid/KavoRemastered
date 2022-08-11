@@ -16,7 +16,6 @@
 
     local Utility = {}
     local Objects = {}
-	task.wait()
     function Kavo:DraggingEnabled(frame, parent)
             
         parent = parent or frame
