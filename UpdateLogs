@@ -9,3 +9,4 @@ Update Logs:
 + Script will also be destroy after the UI
 9/25/2022
 + Added string encryption, prevents further anti cheat
+- New Features: Remove Border ; function RemoveBorder() (NOTE THAT IT ALSO INTERPRETED LIKE BEFORE)
