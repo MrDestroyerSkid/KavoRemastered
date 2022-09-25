@@ -10,3 +10,4 @@ Update Logs:
 9/25/2022
 + Added string encryption, prevents further anti cheat
 - New Features: Remove Border ; function RemoveBorder() (NOTE THAT IT ALSO INTERPRETED LIKE BEFORE)
+- Removed other hub checker, outdated and not reliable, also gives longer load and lag
