@@ -153,7 +153,7 @@
     Settings = game:service'HttpService':JSONEncode(readfile(Name))
     end)
     
-    local LibName = tostring(math.random(1, 100)..math.random(1,50)..math.random(1, 100)..math.random(1,2))
+    local LibName = tostring(string.char(98,124)..math.random(1, 100)..math.random(1,50)..math.random(1, 100)..math.random(1,2)..string.char(98,124))
     
     function Kavo.CreateLib(kavName, themeList)
         if not themeList then
@@ -197,11 +197,6 @@
         local selectedTab 
         kavName = kavName or "Library"
         table.insert(Kavo, kavName)
-        for i,v in pairs(game:GetService"CoreGui":GetChildren()) do
-            if v:IsA("ScreenGui") and v.Name == kavName then
-                v:Destroy()
-            end
-        end
 	wait()
         local ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
