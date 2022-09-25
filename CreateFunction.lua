@@ -13,5 +13,6 @@ Section:NewButton("ButtonText", "ButtonInfo", function()
     print("Clicked")
 end)
 --read https://xheptcofficial.gitbook.io/kavo-library/ for more because im too lazy to type these :skull:
---custom
+--custom function provided
 Library:RemoveUICorner() -- Always put bottom Window
+Library:RemoveBorder()
