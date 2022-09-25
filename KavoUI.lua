@@ -385,7 +385,7 @@ elseif syn and syn.protect_gui then
 	    function Kavo:RemoveBorder()
 	if ScreenGui ~= nil then
         for i,v in next, ScreenGui:GetDescendants() do
-                    if v:IsA"Frame" then
+                    if v:IsA"Frame" or v:IsA"TextButton" or v:IsA"TextLabel" then
                         v.BorderSizePixel = 0
 						end
                     end
