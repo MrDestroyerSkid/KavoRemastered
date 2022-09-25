@@ -7,3 +7,5 @@ Update Logs:
 + Fixed where if you pressed bind (like ToggleUI bind) then it pop up error while kavo is destroyed
 + Less slowdown
 + Script will also be destroy after the UI
+9/12/2022
++ Added string encryption, prevents further anti cheat
