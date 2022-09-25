@@ -387,6 +387,15 @@ elseif syn and syn.protect_gui then
                     end
                 end
 			end
+	    function Kavo:RemoveBorder()
+	if ScreenGui ~= nil then
+        for i,v in next, ScreenGui:GetDescendants() do
+                    if v:IsA"Frame" then
+                        v.BorderSizePixel = 0
+						end
+                    end
+                end
+			end
         function Kavo:ChangeColor(prope,color)
             if prope == "Background" then
                 themeList.Background = color
