@@ -391,6 +391,11 @@ elseif syn and syn.protect_gui then
                     end
                 end
 			end
+	function Kavo:RemoveCloseButton()
+		if close ~= nil then
+			close:Destroy()
+			end
+		end
         function Kavo:ChangeColor(prope,color)
             if prope == "Background" then
                 themeList.Background = color
