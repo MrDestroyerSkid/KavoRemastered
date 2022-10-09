@@ -11,3 +11,5 @@ Update Logs:
 + Added string encryption, prevents further anti cheat
 - New Features: Remove Border ; function RemoveBorder() (NOTE THAT IT ALSO INTERPRETED LIKE BEFORE)
 - Removed other running kavo hub checker, outdated and not reliable, also gives longer load and lag
+10/9/2022
++ Added RemoveCloseButton(), recommended for most of the script can be breaks by closing it
