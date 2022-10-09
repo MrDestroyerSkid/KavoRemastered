@@ -16,3 +16,4 @@ end)
 --custom function provided
 Library:RemoveUICorner() -- Always put bottom Window
 Library:RemoveBorder()
+Library:RemoveCloseButton()
