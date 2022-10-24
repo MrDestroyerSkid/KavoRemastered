@@ -391,6 +391,20 @@ elseif syn and syn.protect_gui then
                     end
                 end
 			end
+	function Kavo:CloseHub()
+		            game.TweenService:Create(close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
+                ImageTransparency = 1
+            }):Play()
+            wait()
+            game.TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+                Size = UDim2.new(0,0,0,0),
+                Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
+            }):Play()
+            wait(1)
+            ScreenGui:Destroy()
+			wait(0.1)
+		script:Destroy()
+		end
 	function Kavo:RemoveCloseButton()
 		if close ~= nil then
 			close:Destroy()
