@@ -762,7 +762,7 @@ elseif syn and syn.protect_gui then
                             else
                                 size = (btn.AbsoluteSize.Y * 1.5)
                             end
-                            c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+                           -- c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
                             for i = 1, 10 do
                                 c.ImageTransparency = c.ImageTransparency + 0.05
                                 wait(len / 12)
