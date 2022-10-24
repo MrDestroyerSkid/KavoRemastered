@@ -13,3 +13,4 @@ Update Logs:
 - Removed other running kavo hub checker, outdated and not reliable, also gives longer load and lag
 10/9/2022
 + Added RemoveCloseButton(), recommended for most of the script can be breaks by closing it
+10/24/2022
