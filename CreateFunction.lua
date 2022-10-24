@@ -17,3 +17,4 @@ end)
 Library:RemoveUICorner() -- Always put bottom Window
 Library:RemoveBorder()
 Library:RemoveCloseButton()
+Library:CloseHub()
