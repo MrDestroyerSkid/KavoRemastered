@@ -179,7 +179,7 @@
         local selectedTab 
         kavName = kavName or "Library"
         table.insert(Kavo, kavName)
-	wait()
+	wait(0.1)
         local ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
         local MainCorner = Instance.new("UICorner")
