@@ -159,27 +159,9 @@
         if not themeList then
             themeList = themes
         end
-        if themeList == "DarkTheme" then
-            themeList = themeStyles.DarkTheme
-        elseif themeList == "LightTheme" then
-            themeList = themeStyles.LightTheme
-        elseif themeList == "BloodTheme" then
-            themeList = themeStyles.BloodTheme
-        elseif themeList == "GrapeTheme" then
-            themeList = themeStyles.GrapeTheme
-        elseif themeList == "Ocean" then
-            themeList = themeStyles.Ocean
-        elseif themeList == "Midnight" then
-            themeList = themeStyles.Midnight
-        elseif themeList == "Sentinel" then
-            themeList = themeStyles.Sentinel
-        elseif themeList == "Synapse" then
-            themeList = themeStyles.Synapse
-        elseif themeList == "Serpent" then
-            themeList = themeStyles.Serpent
-        elseif themeList == "Jerry" then
-            themeList = themeStyles.Jerry
-        else
+        if themeStyles[themeList]  then
+        themeList = themeStyles[themeList]
+	else
             if themeList.SchemeColor == nil then
                 themeList.SchemeColor = Color3.fromRGB(74, 99, 135)
             elseif themeList.Background == nil then
