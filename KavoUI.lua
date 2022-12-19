@@ -216,7 +216,6 @@ elseif syn and syn.protect_gui then
     else
         ScreenGui.Parent = game:GetService"CoreGui"
     end
-    wait()
         ScreenGui.Name = LibName
         ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
         ScreenGui.ResetOnSpawn = false
@@ -283,8 +282,7 @@ elseif syn and syn.protect_gui then
             }):Play()
             wait(1)
             ScreenGui:Destroy()
-			wait(0.1)
-		script:Destroy()
+		script.Disabled = true
         end)
     
         MainSide.Name = "MainSide"
@@ -384,8 +382,7 @@ elseif syn and syn.protect_gui then
             }):Play()
             wait(1)
             ScreenGui:Destroy()
-			wait(0.1)
-		script:Destroy()
+		script.Disabled = true
 		end
 	function Kavo:RemoveCloseButton()
 		if close ~= nil then
