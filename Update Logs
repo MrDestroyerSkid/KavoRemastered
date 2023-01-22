@@ -16,3 +16,6 @@ Update Logs:
 10/24/2022
 12/19/2022
 + Improved script to load Windows faster
+1/22/2023
+- Removed unnecessary variables
++ Lowered throttle time, faster loads
