@@ -8,11 +8,8 @@
     },]]
 
     local Kavo = {}
-
-    local tween = game:GetService("TweenService")
-    local tweeninfo = TweenInfo.new
+    local tween = game:GetService"TweenService"
     local input = game:GetService("UserInputService")
-    local run = game:GetService("RunService")
 
     local Utility = {}
     local Objects = {}
@@ -136,7 +133,6 @@
             ElementColor = Color3.fromRGB(22, 29, 31)
         }
     }
-    local oldTheme = ""
     
     local SettingsT = {
     
