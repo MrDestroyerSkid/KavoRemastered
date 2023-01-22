@@ -3,7 +3,9 @@ Status: Working
 
 Last Updated: 1/22/2023
 
-A newer fan made version of KavoUI Library. More better to use than original one for a while. Improving script stability, faster, better,more shitty themes, patches and fix few annoying thing, it does do a update or patch when new roblox update release, this also improve protection and new custom feature!!!!!
+A newer fan made version of KavoUI Library. More better to use than original one for a while. Improving script stability, faster, better, more shitty themes, patches and fix few annoying thing, it does do a update or patch when new roblox update release, this also improve protection and new custom feature!!!!!
+
+Overall this is a good changes for the script so yes have fun!!1!
 
 IM not a original creator of Kavo but if you want to use official kavo ui then you can go read this https://xheptcofficial.gitbook.io/kavo-library.
 
