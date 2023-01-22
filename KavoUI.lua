@@ -179,7 +179,7 @@
         local selectedTab 
         kavName = kavName or "Library"
         table.insert(Kavo, kavName)
-	wait(0.01)
+	wait(0.001)
         local ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
         local MainCorner = Instance.new("UICorner")
@@ -280,7 +280,7 @@ elseif syn and syn.protect_gui then
                 Size = UDim2.new(0,0,0,0),
                 Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
             }):Play()
-            wait(1)
+            wait(0.7)
             ScreenGui:Destroy()
 		script.Disabled = true
         end)
@@ -380,7 +380,7 @@ elseif syn and syn.protect_gui then
                 Size = UDim2.new(0,0,0,0),
                 Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
             }):Play()
-            wait(1)
+            wait(0.9)
             ScreenGui:Destroy()
 		script.Disabled = true
 		end
