@@ -17,6 +17,6 @@ Join KavoRemastered discord: https://discord.gg/sDkaFhkCJu you can also report b
 
 # Custom Features
 
-Tired of using Old Kavo? We'll have feature to decorate or helping assist you while making script! (SOON)
+Tired of using Old Kavo? We'll have feature to decorate or modifies hub for you!
 
 Check Our Update Logs for news!
