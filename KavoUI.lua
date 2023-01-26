@@ -10,6 +10,7 @@
     local Kavo = {}
     local tween = game:GetService"TweenService"
     local input = game:GetService("UserInputService")
+    local tweeninfo = TweenInfo.new
 
     local Utility = {}
     local Objects = {}
