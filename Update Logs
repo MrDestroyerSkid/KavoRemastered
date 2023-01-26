@@ -19,3 +19,5 @@ Update Logs:
 1/22/2023
 - Removed unnecessary variables
 + Lowered throttle time, faster loads
+1/26/2023
+- Fixed tabs don't highlight, error
