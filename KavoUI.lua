@@ -1,5 +1,5 @@
     --[[
-    Slime = {
+    test = {
         SchemeColor = Color3.fromRGB(),
         Background = Color3.fromRGB(),
         Header = Color3.fromRGB(),
@@ -18,7 +18,6 @@
             
         parent = parent or frame
         
-        -- stolen from wally or kiriot, kek
         local dragging = false
         local dragInput, mousePos, framePos
     
