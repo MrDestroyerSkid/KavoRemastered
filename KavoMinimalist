@@ -167,7 +167,7 @@
         kavName = kavName or "Library"
         table.insert(Kavo, kavName)
 	wait(0.001)
-        local ScreenGui = Instance.new("ScreenGui"9=========================================8675588666766686776676768787888
+        local ScreenGui = Instance.new("ScreenGui")
         local Main = Instance.new("Frame")
         local MainCorner = Instance.new("UICorner")
         local MainHeader = Instance.new("Frame")
