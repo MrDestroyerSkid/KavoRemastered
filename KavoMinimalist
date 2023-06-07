@@ -1,4 +1,3 @@
-    --RECOMMENDED TO USE MAIN KAVO RATHER THAN THIS VERSION
     local Kavo = {}
     local tween = game:GetService"TweenService"
     local input = game:GetService("UserInputService")
