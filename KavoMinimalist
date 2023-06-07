@@ -1,5 +1,4 @@
     --RECOMMENDED TO USE MAIN KAVO RATHER THAN THIS VERSION
-    if checkcaller() then return end
     local Kavo = {}
     local tween = game:GetService"TweenService"
     local input = game:GetService("UserInputService")
